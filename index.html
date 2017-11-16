@@ -1,5 +1,6 @@
 <doctype html>
-<html>
+	<html>
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,13 +15,14 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
+			var link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName('head')[0].appendChild(link);
 		</script>
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
@@ -28,17 +30,20 @@
 					<h3>Ammunition Reloading</h3>
 					<h9>Handloading</h9>
 					<p>
-						<small>Created by <a href="https://twitter.com/jeffroebodine">@JeffroeBodine</a></small>
+						<small>Created by
+							<a href="https://twitter.com/jeffroebodine">@JeffroeBodine</a>
+						</small>
 					</p>
 				</section>
 				<section>
 					<H3>Reloading:</H3>
 					<p>
-						<small>The process of loading firearm cartridges or shotgun shells by assembling the individual components (case/hull, primer, powder, and bullet/shot), rather than purchasing completely assembled, factory-loaded ammunition.</small>
+						<small>The process of loading firearm cartridges or shotgun shells by assembling the individual components (case/hull, primer,
+							powder, and bullet/shot), rather than purchasing completely assembled, factory-loaded ammunition.</small>
 					</p>
 				</section>
 				<section>
-						<img src="images/ammunitionGarage.jpg" height="600" width="600">
+					<img src="images/ammunitionGarage.jpg" height="600" width="600">
 				</section>
 				<section>
 					<H3>Muzzle Loading</H3>
@@ -47,7 +52,7 @@
 					</p>
 				</section>
 				<section>
-					<h3>Parts of a cartridge					</h3>
+					<h3>Parts of a cartridge </h3>
 					<p>
 						<small>Primer -> Case -> Powder -> Bullet</small>
 					</p>
@@ -64,20 +69,18 @@
 				<section>
 					Primers (Berdain)
 					<p>
-						<img src="images/primers.gif"
+						<img src="images/primers.gif">
 					</p>
 				</section>
 				<section>
 					Powder
 					<p>
-						<img src="images/gunpowder.jpg"
-					</p>
+						<img src="images/gunpowder.jpg"> </p>
 				</section>
 				<section>
 					Bullet
 					<p>
-						<img src="images/bulletTypes.jpg"
-					</p>
+						<img src="images/bulletTypes.jpg"> </p>
 				</section>
 				<section>
 					Tools
@@ -86,16 +89,19 @@
 					</p>
 				</section>
 				<section>
-					Process
+					Processs
 				</section>
 				<section>
-					Examine - Sort
+					Collect - Examine - Sort
 				</section>
 				<section>
 					De-Prime
 				</section>
 				<section>
 					Clean
+					<p>
+						Vibratory - Sonic cleaner
+					</p>
 				</section>
 				<section>
 					Swage / Remove crimp ring
@@ -140,14 +146,30 @@
 				history: true,
 				center: true,
 
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				dependencies: [{
+						src: 'plugin/markdown/marked.js'
+					},
+					{
+						src: 'plugin/markdown/markdown.js'
+					},
+					{
+						src: 'plugin/notes/notes.js',
+						async: true
+					},
+					{
+						src: 'plugin/zoom-js/zoom.js',
+						async: true
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
+					}
 				]
 			});
 		</script>
 	</body>
-</html>
+
+	</html>
